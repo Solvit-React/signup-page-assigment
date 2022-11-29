@@ -1,14 +1,16 @@
+import React from 'react';
 
-import './App.css'
+import './App.css';
+import LoginPage from './components/index';
+import SignupPage from './routes/sign-up';
 
+function App(){
 
-function App() {
+  return <div className='App'>
+    <SignupPage/>
 
-  return (
-    <div className="App">
-     Hello  there
-    </div>
-  )
+    <LoginPage/>
+  </div>
 }
 
 export default App

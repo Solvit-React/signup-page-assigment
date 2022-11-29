@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 50%;
+    height: 100%;
+}
+.SignupPage{
+width: 50%;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+}
+
+.header{
+    margin-bottom: 100px;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    width: 488px;
+}
+
+.header  p {
+    color: hsl(227deg 14% 74%);
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+}
+
+.input-container {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
+.signup-btn {
+    padding: 20px 40px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(209deg 100% 55%);
+    border: 1px solid hsl(209deg 100% 55%);
+    border: 2px solid hsl(209deg 100% 55%);
+    border-radius: 5px;
+    margin-top:485px;
+    cursor: pointer;
+    position: fixed;
+    /* right:12900px;  */
+}
+
+.signup-btn:hover {
+    background-color: transparent;
+    color: hsl(209deg 100% 55%);
+}
+
+.input-container input {
+    padding: 30px;
+    position: relative;
+    top: 190px;
+    right: 101px;
+}
+.form input{
+    padding: 23px;
+    width: 613px;
+    margin-top: 24px;
+    margin-right: 32px;
+}       
+.password {
+   top:23px;
+   margin-top: 160px;
+   right: 104px;
+   position: relative;
+}
+.form{
+    width: 100%;
+    position: relative;
+    right: 373px;
+}
