@@ -4,4 +4,53 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
+   
 }
+.form {
+    width: 100%;
+}
+
+*{
+width: 50%;
+padding: 50px 50px ;
+
+}
+.container{
+width: 100%;
+display: flex;
+justify-content: space-between;
+color: hsl(227deg 14% 74%);
+gap: 30px;
+margin-bottom: 20px;
+align-items: center;
+
+}
+.container1{
+    width: 100%;
+    color: hsl(227deg 14% 74%);
+}
+.signup-btn {
+    padding: 20px 40px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(209deg 100% 55%);
+    border: 1px solid hsl(209deg 100% 55%);
+    border: 2px solid hsl(209deg 100% 55%);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.header-text h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.header-text {
+    width: 100%;
+}
+.header-text p {
+    color: hsl(227deg 14% 74%);
+    font-size: 12px;
+}
+
+
