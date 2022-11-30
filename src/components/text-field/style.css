@@ -1,7 +1,7 @@
 .text-field {
     height: 48px;
     width: 50%;
-    /* max-width: 400px;*/
+    /*max-width: 400px;*/
     position: relative;
 }
 
@@ -12,6 +12,7 @@
     left: 0;
     top: 0;
     padding-left: 12px;
+    font-weight: bold;
 }
 
 .text-field input:focus~label,
@@ -27,12 +28,6 @@
     transform-origin: left;
     background: white;
     padding: 0 4px;
-    transition: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    transform-origin: left;
-    background: white;
-    padding: 0 4px;
     transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+    color: rgb(49, 47, 47);
 }
