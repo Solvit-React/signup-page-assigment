@@ -1,20 +1,41 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html,body{
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 .SignupPage{
-width: 50%;
-    padding: 100px 50px;
+    width: 100%;
+    max-width: 50%;
+    padding: 50px 50px;
     display: flex;
     flex-direction: row;
     position: sticky;
 }
+.input-container input:focus ~ ::placeholder, .input-container.transform ::placeholder{
+    transform: translateY(-32px) scale(0.78);
 
+}
+.input-container ::placeholder{
+position:absolute;
+top:50%;
+left: 12;
+transform: translateY(-50%);
+transform-origin: left;
+background: white;
+padding: 0 4px;
+transition: absolute;
+top:50%;
+left: 12px;
+transform: translateY(-50%);
+transform-origin: left;
+background: white;
+padding: 0 4px;
+transition: transform 0.3s cubic-bezier(0,0,0.3,1);
+}
 .header{
     margin-bottom: 100px;
 }
@@ -36,10 +57,11 @@ width: 50%;
 
 .input-container {
     width: 100%;
+    max-width: 80%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -52,10 +74,10 @@ width: 50%;
     border: 1px solid hsl(209deg 100% 55%);
     border: 2px solid hsl(209deg 100% 55%);
     border-radius: 5px;
-    margin-top:485px;
+    margin-top:489px;
     cursor: pointer;
-    position: fixed;
-    /* right:12900px;  */
+    position: absolute;
+    right:34em;
 }
 
 .signup-btn:hover {
@@ -71,7 +93,7 @@ width: 50%;
 }
 .form input{
     padding: 23px;
-    width: 613px;
+    width: 475px;
     margin-top: 24px;
     margin-right: 32px;
 }       
@@ -82,7 +104,47 @@ width: 50%;
    position: relative;
 }
 .form{
-    width: 100%;
+    width: 50%;
     position: relative;
     right: 373px;
+} */
+.create-account-form{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+   
 }
+.create-account-form h1{
+    margin-bottom: 20px;
+    font-size: 48px;
+    width: 488px;
+}
+.create-account-form P{
+    font-size: 14px;
+    padding-bottom: 80px;
+    color: gray;
+}
+.create-account{
+    display: flex;
+    gap: 15px;
+}
+.create-account2{
+    display: flex;
+    gap: 15px;
+}
+.password{
+    width: 200%;
+}
+.signup-btn{
+        color: rgb(37, 24, 24);
+        background-color: #009eff;
+        height: 50px;
+        width: 150px;
+        border: none;
+}
+/* .signup-btn:hover {
+    background-color:azure;
+    color: rgb(3, 23, 41);
+} */

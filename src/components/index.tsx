@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import Image from '../assets/undraw_Programmer_re_owql.png';
+import Image from '../assets/red.png';
 
 
 

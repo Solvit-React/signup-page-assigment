@@ -1,12 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .LoginPage{
-    width: 50%;
-    background-color:white;
-    padding: 70px 30px 0;
-    position: sticky;
+    
+    background-color:hsl(177deg 18% 69% / 67%);
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2em;
+    width: 51em;
 }
 
 .login-btn {
-    padding: 20px 55px;
+    padding: 15px;
     font-weight: bold;
     color: hsl(209deg 100% 55%);
     background-color: transparent;
@@ -14,8 +24,12 @@
     border-radius: 5px;
     margin-top: 30px;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: -3px;
     animation: 300ms linear ease-in;
+    width: 86px;
+    position: relative;
+    bottom: 84px;
+    left: 169px;
 }
 
 .login-btn:hover {
@@ -37,6 +51,12 @@
 .myimage{
     
     width: 91%;
-    background-color: azure;
-    margin-left: 146px;
+    color:hsl(177deg 18% 69% / 67%);
+    height: 50%;
+    margin-left: 94px;
+}
+.image{
+    margin-top: -8px;
+    margin-right: -46px;
+    height: 356px;
 }
