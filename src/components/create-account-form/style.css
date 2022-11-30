@@ -5,8 +5,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 40px 80px 0px 80px;
-    background: white;
-    /* margin: 10px 0px 10px 100px;*/
+    background: white;  
 }
 
 .create-account-form h2 {
@@ -15,26 +14,28 @@
 
 .pi {
     padding-bottom: 50px;
+    font-size: 80%;
 }
 
 .test1 {
     display: flex;
     gap: 20px;
+    padding-left: 5px;
 }
 
 .test2 {
     display: flex;
     gap: 20px;
+    padding-left: 5px;
 }
 
 .btn {
+    width: 40%;
     height: 10%;
-    width: 25%;
     background-color: rgb(42, 120, 236);
     border: none;
     border-radius: 3px;
     color: white;
-    font-weight: bold;
 }
 
 .pass {
