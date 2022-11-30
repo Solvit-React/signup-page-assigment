@@ -1,0 +1,42 @@
+.create-account-form {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 80px 0px 80px;
+    background: white;
+    /* margin: 10px 0px 10px 100px;*/
+}
+
+.create-account-form h2 {
+    font-size: 40px;
+}
+
+.pi {
+    padding-bottom: 50px;
+}
+
+.test1 {
+    display: flex;
+    gap: 20px;
+}
+
+.test2 {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    height: 10%;
+    width: 25%;
+    background-color: rgb(42, 120, 236);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.pass {
+    width: 64.60em;
+}

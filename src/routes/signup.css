@@ -1,0 +1,17 @@
+.signup-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 60px;*/
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.dev-image {
+    width: 50%;
+}
+
+.create-account-form {
+    width: 50%;
+}                                   
