@@ -3,12 +3,16 @@ import './Input.css';
 
 type InputProps = {
     type: string,
-    placeholder: string
+    placeholder: string,
+    name: string
 }
 
 function Input(props: InputProps) {
   return (
-    <input type={props.type} placeholder={props.placeholder} className="input" />
+    <div>
+      <label htmlFor={props.name}>{props.placeholder}</label>
+      <input id={props.name} name={props.name} type={props.type} placeholder={props.placeholder} className="input" />
+    </div>
   )
 }
 
