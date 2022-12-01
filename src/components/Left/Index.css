@@ -1,96 +1,3 @@
-/* .left {
-    width: 50%;
-    padding: 100px 50px; */
-    /* background-color: red; */
-/* }
-
-.header-text {
-    margin-bottom: 100px;
-}
-
-.header-text h1 {
-    margin-bottom: 20px;
-    font-size: 48px;
-}
-
-.header-text p {
-    color: hsl(227deg 14% 74%);
-    font-weight: bold;
-}
-
-.form {
-    width: 100%;
-}
-
-.input-container {
-    width: 500px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 20px; */
-    /* position: absolute;
-    right: 16px;
-    bottom: 10px; */
-
-/* } */
-
-/* .signup-btn {
-    padding: 20px 40px;
-    font-weight: bold;
-    color: white;
-    background-color: hsl(209deg 100% 55%);
-    border: 1px solid hsl(209deg 100% 55%);
-    border: 2px solid hsl(209deg 100% 55%);
-    border-radius: 5px;
-    margin-top:30px;
-    cursor: pointer; 
-}
-
-.signup-btn:hover {
-    background-color: transparent;
-    color: hsl(209deg 100% 55%);
-} */
-
-
-
-
-
-
-
-/* .input-container input:focus ~ :placeholder-shown, .input-container.transform label
-{
-    transform: translateY(-32px) scale(0.78);
-} */
-/* {
-    text-align: right; 
-    transform: translateY(-50px); 
-}  */
-
-
-
-
-/* .text-field
-{
-    height :48px;
-width: 100%;
-position: relative;
-}
-
-.text-field input{
-    height:100%;
-width: 100%;
-
-} */
-/* 
-.input-container label{
-position: absolute;
-top: 50%;
-left: ; */
-
-
-
 
 
 .create-account-form{
@@ -102,7 +9,7 @@ left: ; */
     margin-bottom: 100px;
 }
 .create-account-form h1{
-    /* font-size: 40px; */
+   
     margin-bottom: 20px;
     font-size: 48px;
 
@@ -114,8 +21,7 @@ left: ; */
     font-weight: bold;
 }
 .create-account{
-    /* display: flex; */
-    /* gap: 15px; */
+    
     width: 500px;
     height: 100px;
     display: flex;
@@ -125,8 +31,7 @@ left: ; */
     margin-bottom: 20px;
 }
 .create-account2{
-    /* display: flex;
-    gap: 15px; */
+    
     width: 500px;
     height: 100px;
     display: flex;
@@ -139,7 +44,7 @@ left: ; */
     width: 1000px;
 }
 .signup-btn{
-        /* color: white; */
+        
         background-color: #009eff;
         height: 50px;
         width: 150px;
@@ -148,8 +53,7 @@ left: ; */
     font-weight: bold;
     color: white;
     background-color: hsl(209deg 100% 55%);
-    /* border: 1px solid hsl(209deg 100% 55%);
-    border: 2px solid hsl(209deg 100% 55%); */
+    
     border-radius: 5px;
     margin-top:30px;
     cursor: pointer; 

@@ -1,33 +1,3 @@
-// import React from 'react'
-// import Input from './Input/Input'
-// import TextFieldInput from '../textfield'
-// import './Index.css'
-
-// function Left() {
-//   return (
-//     <div className='left'>
-//         <div className='header-text'>
-//             <h1>Create Account</h1>
-//             <p>Create a great platform for managing your cases & clients</p>
-//         </div>
-//         <form action="" className='form'>
-//             <div className='input-container'>
-//                 <Input name='fullname' type='text' placeholder='Full Name*' />
-//                 <Input name='organizationName' type='text' placeholder='Organization Name*' />
-//             </div>
-//             <div className='input-container'>
-//                 <Input name='email' type='email' placeholder='Email Address*' />
-//                 <Input name='telephone' type='tel' placeholder='Phone Number*' />
-//             </div>
-//             <Input name='password' type='password' placeholder='Password*' />
-//         </form>
-//         <button className='signup-btn'>SIGN UP</button>
-//     </div>
-//   )
-// }
-
-// export default Left
-
 
 import TextFieldInput from "../textfield";
 import "./Index.css";
