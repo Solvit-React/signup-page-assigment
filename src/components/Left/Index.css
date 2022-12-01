@@ -1,0 +1,60 @@
+
+
+.create-account-form{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+.create-account-form h1{
+   
+    margin-bottom: 20px;
+    font-size: 48px;
+
+}
+.create-account-form P{
+    font-size: 20px;
+    padding-bottom: 80px;
+    color: hsl(227deg 14% 74%);
+    font-weight: bold;
+}
+.create-account{
+    
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.create-account2{
+    
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.password{
+    width: 1000px;
+}
+.signup-btn{
+        
+        background-color: #009eff;
+        height: 50px;
+        width: 150px;
+        border: none;
+        padding: 20px 40px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(209deg 100% 55%);
+    
+    border-radius: 5px;
+    margin-top:30px;
+    cursor: pointer; 
+}
