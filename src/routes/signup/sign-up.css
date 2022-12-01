@@ -1,0 +1,55 @@
+
+.container{
+ height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+.head{
+    margin-bottom: 100px;
+}
+.head h1{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.head p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: hsl(227deg 14% 74%);;
+}
+.container form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    
+}
+ .form-group input {
+margin-bottom: 20px;
+margin-right: 13px;
+height: 55px;
+
+}
+.pssw{
+width: 346px;
+margin-bottom: 20px;
+margin-right: 13px;
+height: 55px;
+}
+.signup-button{
+    
+    padding:20px 40px;
+    margin-left: 10px;
+    color: white;
+    font-size: 12px;
+    background-color: hsl(209deg 100% 55%);
+    border: 2px solid hsl(209deg 100% 55%);
+    border-radius: 5px;
+    margin-top:30px;
+    cursor: pointer; 
+}
+.signup-button:hover{
+    background-color: transparent;
+    color: hsl(209deg 100% 55%);
+}

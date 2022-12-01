@@ -1,0 +1,31 @@
+.container1{
+    height: 100%;
+    width:calc (100% - 50%) ;
+    background-color:red;
+   
+}
+.picture{
+    top: 79px;
+    position: absolute;
+    left: 558px;
+    width: 50%;
+}
+.login-txt{
+    top: 50px;
+    position: absolute;
+    left: 513px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.login-btn{
+    top: 40px;
+    position: absolute;
+    left: 620px;
+    width: 90px;
+    height: 35px;
+    color: hsl(209deg 100% 55%);
+    border: 1px solid hsl(209deg 100% 55%);
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
