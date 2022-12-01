@@ -1,0 +1,29 @@
+.Member,image{
+    position: absolute;
+    top: 23px;
+
+}
+.Member{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+}
+.image img{
+    height: 441px;
+    width: 484px;
+    position: absolute;
+    left: 89px;
+    transform: translate(10px, 10px);
+}
+.login-text{
+    position: absolute;
+    width: 349px;
+    top: 12px;
+    left: -108px;
+}
+.login-button{
+    position: absolute;
+    right: -191px;
+
+}
+
