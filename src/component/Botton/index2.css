@@ -1,0 +1,9 @@
+.Botton{
+ height: 100px;
+ width: 100px;  
+  padding: 30px;;
+  display: flex;
+  flex-direction: row;
+
+
+}

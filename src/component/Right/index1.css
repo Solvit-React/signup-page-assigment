@@ -1,0 +1,38 @@
+.Rightside{
+    height: 100%;
+    width:calc(100% - 50%) ;
+    background-color: rgb(241, 248, 246);
+
+}
+.head{
+    width: 100%;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 90px;
+    
+  
+}
+h3{
+    color: black;
+   
+
+}
+.login{
+    background-color: rgb(224, 224, 240);
+    padding: 15px;
+    width: 160px;
+    border-radius: 5px;
+    border: 2px solid rgb(20, 20, 228);
+    color:  rgb(32, 32, 224);
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    right: 300px;
+}
+.image{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 45px;
+}

@@ -1,12 +1,23 @@
 
+import { Component } from 'react'
 import './App.css'
+
+import Leftside from './component/left/index'
+import Rightside from './component/Right/index1'
+
 
 
 function App() {
 
   return (
+  
     <div className="App">
-     Hello  there
+      <div className= "form">
+        
+  < Leftside/>
+  <Rightside/>
+  
+  </div>
     </div>
   )
 }
