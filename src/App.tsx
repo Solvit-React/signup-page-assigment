@@ -5,7 +5,7 @@ import Left from './components/Left/Index'
 import Right from './components/Right/Index'
 
 function App() {
-
+  
   return (
     <div className="App">
       <Left />
