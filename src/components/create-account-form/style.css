@@ -30,8 +30,8 @@
 }
 
 .btn {
-    width: 40%;
-    height: 10%;
+    width: 25%;
+    height: 8%;
     background-color: rgb(42, 120, 236);
     border: none;
     border-radius: 3px;
@@ -39,5 +39,5 @@
 }
 
 .pass {
-    width: 64.60em;
+    width: 66.60em;
 }
