@@ -1,9 +1,11 @@
-.text-field{
+.text-field {
     height: 48px;
-    width: 100%;
+    width: 50%;
+    /* max-width: 400px;*/
     position: relative;
 }
-.text-field input{
+
+.text-field input {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -11,12 +13,13 @@
     top: 0;
     padding-left: 12px;
 }
-.text-field input:focus ~ label, .text-field.transform label{
-    transform: translateY(-32px) scale(0.78);
 
+.text-field input:focus~label,
+.text-field.transform label {
+    transform: translateY(-32px) scale(0.78);
 }
 
-.text-field label{
+.text-field label {
     position: absolute;
     top: 50%;
     left: 12px;

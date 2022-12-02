@@ -1,3 +1,26 @@
-.dev-image{
+.dev-image {
     background: #eff6fe;
+    /*margin: 10px 100px 10px 0px;*/
+    padding: 40px 0px 60px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 120%;
+}
+.btn1 {
+    width: 20%;
+    height: 10%;
+    margin-top: -2%;
+    border: 2px solid rgb(42, 120, 236);
+    border-radius: 3px;
+    color: rgb(42, 120, 236);
+    font-weight: bold;
+    background-color: rgb(236, 247, 252);
+}
+.dev-image {
+    background-image: url("/src/assets/image.jpeg");
+    background-repeat: no-repeat;
+    /* background-color: rgb(236, 247, 252);*/
+    background-position: bottom;
 }

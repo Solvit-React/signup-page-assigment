@@ -7,6 +7,7 @@ type Props = {
 }
 const TextFieldInput = ({
     name, label, type = "text"
+ 
 }: Props) => {
 
     let [value, setValue] = useState("");
