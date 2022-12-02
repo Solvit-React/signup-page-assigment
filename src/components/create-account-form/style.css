@@ -41,3 +41,8 @@
 .pass {
     width: 66.60em;
 }
+.pass input{
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
