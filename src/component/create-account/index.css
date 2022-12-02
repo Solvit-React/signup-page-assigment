@@ -1,0 +1,88 @@
+.SignUp{
+    height: 100%;
+    width: 50%;
+    
+    
+}
+h1{
+    margin-bottom: 12px;
+    padding-left: 40px;
+    padding-top: 80px;
+}
+h3{
+    
+    font-size: 15px;
+    color: rgb(110, 108, 108);
+    font-weight: bold;
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+
+    .form1{
+        width: 100%;
+
+
+    }
+    .form1 input{
+        width: 440px;
+        margin-left: 40px;
+        padding: 20px;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid rgb(110, 110, 109);
+    }
+
+    .input-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .input-container1 { 
+        width: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .input-container input{
+        padding: 20px;
+        margin-left: 40px;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 180px;
+        border-radius: 3px;
+        border: 1px solid rgb(110, 110, 109);
+        
+        
+    }
+    .input-container1 input{
+        padding: 20px;
+        margin-left: 40px;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 180px;
+        border-radius: 3px;
+        border: 1px solid rgb(110, 110, 109);
+        
+        
+    }
+
+.button{
+    height: 60px;
+    width: 170px;
+    background-color: rgb(23, 23, 100);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    align-items: center;
+    margin-left: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+:hover button{
+background-color: rgb(109, 207, 220);
+}
