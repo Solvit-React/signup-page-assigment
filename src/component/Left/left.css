@@ -1,0 +1,72 @@
+.Left{
+    height: 100%;
+    width: 50%;
+}
+.header{
+    padding: 10px;
+}
+h1{
+padding-top: 40px;
+margin: 20px;
+margin-left: 40px;
+}
+p{
+    margin: 50px;
+    margin-left: 40px;
+    color: rgb(178, 173, 173);
+    font-size: 15px;
+}
+.form{
+    width: 100%;
+    display: flex;
+}
+
+.input-container input{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(154, 152, 152);
+}
+
+.email-container input{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(154, 152, 152);
+    
+
+}
+
+.password input{
+    width: 500px;
+    padding: 20px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(154, 152, 152);
+
+
+}
+
+.signup button{
+    padding: 20px;
+    margin-left: 40px;
+    background-color: blue;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    color: white;
+    
+   
+}
+
+

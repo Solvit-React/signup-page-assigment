@@ -1,0 +1,26 @@
+.Right{
+    height: 100%;
+    width: calc(100% - 50%);
+     background-color: rgb(239, 247, 250); 
+}
+
+h1{
+    font-size: 15px;
+    margin-left: 40px;
+}
+.debro {
+
+   padding: 15px;
+    width: 140px;
+    position: absolute;
+    right: 510px;
+    top: 45px;
+    border-radius: 5px;
+    border: 2px solid rgb(117, 117, 244);
+    color: rgb(117, 117, 244);
+    background-color: rgb(239, 247, 250);
+
+
+    
+
+}

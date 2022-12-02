@@ -1,12 +1,17 @@
 
 import './App.css'
+import Left from './component/Left/left'
+import Right from './component/Right/right'
 
 
 function App() {
 
   return (
     <div className="App">
-     Hello  there
+     <div className='form1'>
+     <Left/>
+     <Right/>
+     </div>
     </div>
   )
 }
