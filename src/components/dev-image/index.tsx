@@ -1,8 +1,20 @@
-import "./style.css";
 
-const DevImage = () => {
-    return <div className="dev-image">
-        <h1>Dev imag</h1>
-    </div>
+import "./style.css";
+import img from '../../assets/image.jpg'
+
+declare module "*.jpg";
+
+const Right = () => {
+
+    return(
+     
+     <div className='right'>
+    <span className='login-text'>Already a member?</span>
+    <button className='login-btn'>LOGIN</button>
+   <img src={img} alt="" className="img"/>
+</div>
+
+)
+
 }
-export default DevImage;
+export default Right;
