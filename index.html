@@ -1,13 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/download.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIGNUP-LOGIN-PAGE</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Rwanda Tours | Premium Discovery</title>
+    <style>
+        /* COLOR PALETTE - Navy & Gold Theme */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f0f4f8;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: #001d3d;
+            color: #b3cbda;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #ffc300;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        /* NAV */
+        nav {
+            background: #003566;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffc300;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #003566 0%, #001d3d 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* VIDEO SECTION */
+        #video-showcase {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            width: 100%;
+        }
+
+        .video-wrapper {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #001d3d;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background: #ffc300;
+            margin: 10px auto;
+        }
+
+        /* CARDS */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap; 
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 0 0 25px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-bottom: 5px solid #003566;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+            border-bottom-color: #ffc300;
+        }
+
+        .card h3 {
+            background: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #001d3d;
+        }
+
+        .card p {
+            padding: 0 20px;
+            color: #666;
+        }
+
+        /* BUTTONS */
+        button {
+            padding: 14px 28px;
+            background: #ffc300;
+            color: #001d3d;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 195, 0, 0.3);
+        }
+
+        button:hover {
+            background: #001d3d;
+            color: #ffc300;
+            transform: scale(1.05);
+        }
+
+        .card button {
+            margin-top: 15px;
+            width: 80%;
+        }
+
+        /* GALLERY */
+        .gallery-container img {
+            width: 260px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 12px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        /* BOOKING FORM STYLES */
+        #booking-section {
+            background: #ffffff;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #003566;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #ffc300;
+        }
+
+        /* PAYMENT BOX STYLING */
+        .payment-method {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px dashed #003566;
+            margin-top: 20px;
+        }
+
+        .payment-options {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .payment-options label {
+            background: white;
+            border: 2px solid #e0e0e0;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            font-size: 14px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .payment-options input[type="radio"] {
+            display: none;
+        }
+
+        .payment-options input[type="radio"]:checked + label {
+            border-color: #ffc300;
+            background: #fffdf5;
+            color: #001d3d;
+        }
+
+        /* SUCCESS MESSAGE STYLE */
+        #booking-success {
+            display: none;
+            text-align: center;
+            background: #f0fff4;
+            border: 2px solid #38a169;
+            padding: 30px;
+            border-radius: 15px;
+            color: #2f855a;
+        }
+
+        #booking-success h3 {
+            margin-top: 0;
+            color: #276749;
+        }
+
+        /* SUPPORT BOX */
+        .support-container {
+            background: #e9ecef;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: left;
+            border-left: 8px solid #ffc300;
+        }
+
+        #feedback-status {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        #mapImage {
+            display: none;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 15px;
+            border: 5px solid #003566;
+        }
+
+        /* FOOTER & SOCIAL MEDIA */
+        footer {
+            background: #001d3d;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 4px solid #ffc300;
+        }
+
+        .social-container {
+            margin-bottom: 25px;
+        }
+
+        .social-container p {
+            font-weight: bold;
+            color: #ffc300;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            background: #003566;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s;
+            border: 1px solid #ffc300;
+        }
+
+        .social-links a:hover {
+            background: #ffc300;
+            color: #001d3d;
+            transform: translateY(-5px);
+        }
+
+        .flag-icon {
+            width: 60px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg" alt="Rwanda Flag" class="flag-icon">
+    <h1>RWANDA TOURS</h1>
+    <p>Discover the Land of a Thousand Hills</p>
+</header>
+
+<nav>
+    <a href="#dest">Destinations</a>
+    <a href="#video-showcase">Watch Tour</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking-section">Book Trip</a>
+    <a href="#contact">Travel Help</a>
+</nav>
+
+<div class="hero">
+    Your Journey of a Lifetime Starts Here 🌄
+</div>
+
+<!-- VIDEO SECTION -->
+<section id="video-showcase">
+    <h2>Project Demo</h2>
+    <div class="video-wrapper">
+        <video controls poster="image/poster.jpg">
+            <source src="Video/Gorilla.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="dest">
+    <h2>Top Destinations</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Volcanoes National Park</h3>
+            <p>Experience the majesty of mountain gorillas in their natural habitat.🦍 🦍🌳</p>
+            <button onclick="goToBooking('Volcanoes National Park')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Lake Kivu</h3>
+            <p>Relax by the emerald waters of one of Africa's Great Lakes.🌊🌊 🌊</p>
+            <button onclick="goToBooking('Lake Kivu')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Nyungwe Forest</h3>
+            <p>Walk above the trees on the famous canopy walkway. 🌳🌳🌳</p>
+            <button onclick="goToBooking('Nyungwe Forest')">Book Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+        <img src="image/picture 1.jpeg" alt="Rwanda Landscape">
+        <img src="image/Picture 2.jpeg" alt="Gorilla Trekking">
+        <img src="image/picture 3.webp" alt="Lake Kivu">
+        <img src="image/picture 4.webp" alt="Nyungwe Canopy">
+    </div>
+</section>
+
+<!-- BOOKING FORM SECTION -->
+<section id="booking-section">
+    <h2 style="text-align: center; display: block;">Book Your Adventure</h2>
+    
+    <form id="bookingForm" onsubmit="handleBooking(event)">
+        <div class="form-group">
+            <label>Select Destination:</label>
+            <select id="destInput" required style="border-color: #ffc300; font-weight: bold;">
+                <option value="">-- Choose a Destination --</option>
+                <option value="Volcanoes National Park">Volcanoes National Park 🦍</option>
+                <option value="Lake Kivu">Lake Kivu 🌊</option>
+                <option value="Nyungwe Forest">Nyungwe Forest 🌳</option>
+                <option value="Akagera Park">Akagera National Park 🦁</option>
+                <option value="Kigali City">Kigali City Tour 🏙️</option>
+            </select>
+        </div>
+
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div class="form-group" style="flex: 1; min-width: 250px;">
+                <label>Full Name:</label>
+                <input type="text" id="userName" required placeholder="John Doe">
+            </div>
+            <div class="form-group" style="flex: 1; min-width: 250px;">
+                <label>Email Address:</label>
+                <input type="email" id="userEmail" required placeholder="john@example.com">
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div class="form-group" style="flex: 1; min-width: 250px;">
+                <label>Country of Residence:</label>
+                <select id="visitorCountry" required onchange="updateDialCode()">
+                    <option value="">Select your country</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group" style="flex: 1; min-width: 250px;">
+                <label>Phone Number:</label>
+                <input type="tel" id="userPhone" placeholder="+250 ...">
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <label>Select Payment Method:</label>
+            <div class="payment-options">
+                <input type="radio" name="pay" id="card" value="Credit Card" required>
+                <label for="card">💳 Card</label>
+
+                <input type="radio" name="pay" id="momo" value="Mobile Money">
+                <label for="momo">📱 MoMo</label>
+
+                <input type="radio" name="pay" id="paypal" value="PayPal">
+                <label for="paypal">🅿️ PayPal</label>
+            </div>
+        </div>
+
+        <button type="submit" style="width: 100%; margin-top: 25px;">Confirm & Pay Now</button>
+    </form>
+
+    <div id="booking-success">
+        <div style="font-size: 50px; margin-bottom: 10px;">✅</div>
+        <h3>Booking Confirmed!</h3>
+        <p id="confText"></p>
+        <p>Our travel agents will contact you within 24 hours. Thank you!</p>
+        <button onclick="resetBookingForm()" style="background: #003566; color: white;">Book Another Trip</button>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Travel Help & Support</h2>
+    <div class="support-container">
+        <form id="helpForm" action="https://formspree.io/f/your-id-here" method="POST">
+            <div class="form-group">
+                <label>Your Contact Email:</label>
+                <input type="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label>How can we help you?</label>
+                <textarea name="message" rows="4" required placeholder="Ask your question here..."></textarea>
+            </div>
+            <button type="submit" style="margin-top: 15px; width: 100%; background: #003566; color: white;">Send Help Request</button>
+        </form>
+        <div id="feedback-status">✅ Request Sent! Check your email soon.</div>
+    </div>
+    <button onclick="getLocation()">Pinpoint My Location 📍</button>
+    <p id="loc" style="margin-top: 15px; font-weight: bold; color: #003566;"></p>
+    <img id="mapImage" src="" alt="Location Map">
+</section>
+
+<footer>
+    <div class="social-container">
+        <p>Connect with us on Social Media</p>
+        <div class="social-links">
+            <a href="https://facebook.com/yourprofile" target="_blank" title="Facebook">FB</a>
+            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram">IG</a>
+            <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter/X">X</a>
+            <a href="https://wa.me/250123456789" target="_blank" title="WhatsApp">WA</a>
+        </div>
+    </div>
+    <p>© 2026 Rwanda Tours | Premium Safaris & Adventures</p>
+</footer>
+
+<script>
+const dialCodes = {
+    "Rwanda": "+250",
+    "USA": "+1",
+    "UK": "+44",
+    "Kenya": "+254",
+    "Other": "+"
+};
+
+function updateDialCode() {
+    const country = document.getElementById('visitorCountry').value;
+    const phoneInput = document.getElementById('userPhone');
+    if (dialCodes[country]) {
+        phoneInput.value = dialCodes[country] + " ";
+        phoneInput.focus();
+    }
+}
+
+function goToBooking(destinationName) {
+    const selectBox = document.getElementById("destInput");
+    selectBox.value = destinationName;
+    document.getElementById("booking-section").scrollIntoView({behavior: "smooth"});
+}
+
+function handleBooking(event) {
+    event.preventDefault();
+    const name = document.getElementById("userName").value;
+    const destination = document.getElementById("destInput").value;
+    const payment = document.querySelector('input[name="pay"]:checked').value;
+    
+    document.getElementById("bookingForm").style.display = "none";
+    document.getElementById("booking-success").style.display = "block";
+    document.getElementById("confText").innerHTML = `Congratulations <b>${name}</b>! Your trip to <b>${destination}</b> has been reserved using <b>${payment}</b>.`;
+}
+
+function resetBookingForm() {
+    document.getElementById("bookingForm").reset();
+    document.getElementById("bookingForm").style.display = "block";
+    document.getElementById("booking-success").style.display = "none";
+}
+
+function getLocation() {
+    const locDisplay = document.getElementById("loc");
+    locDisplay.innerHTML = "Accessing GPS... 📡";
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, (err) => locDisplay.innerHTML = err.message);
+    }
+}
+
+function showPosition(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    document.getElementById("loc").innerHTML = `Lat: ${lat.toFixed(4)} | Long: ${lon.toFixed(4)}`;
+    const mapImg = document.getElementById("mapImage");
+    mapImg.src = `https://static-maps.yandex.ru/1.x/?lang=en_US&ll=${lon},${lat}&z=13&l=map&size=500,300`;
+    mapImg.style.display = 'block';
+}
+
+const helpForm = document.getElementById("helpForm");
+helpForm.onsubmit = async (e) => {
+    e.preventDefault();
+    const status = document.getElementById("feedback-status");
+    status.style.display = "block";
+    helpForm.reset();
+    setTimeout(() => { status.style.display = "none"; }, 4000);
+};
+</script>
+
+</body>
 </html>
